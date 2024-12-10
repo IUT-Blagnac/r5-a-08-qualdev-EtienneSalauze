@@ -1,31 +1,3 @@
-= R5.A.08 -- Dépôt pour les TPs
-:icons: font
-:MoSCoW: https://fr.wikipedia.org/wiki/M%C3%A9thode_MoSCoW[MoSCoW]
-
-Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Jonh Doe].
-
-== TP1
-
-.Exemple de code
-[source,java]
----
-@Given("today is Sunday")
-public void today_is_sunday() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
----
-
-.Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
-
-== TP2...
-
-
-== TP3
-
-.feature :
-
 Feature: Gestion des tâches dans l'application To-Do
 
   Scenario: Ajouter une tâche avec succès
@@ -42,9 +14,3 @@ Feature: Gestion des tâches dans l'application To-Do
     Given L'utilisateur a une tâche intitulée "Faire les courses" dans la liste
     When L'utilisateur supprime la tâche "Faire les courses"
     Then La tâche "Faire les courses" ne doit plus apparaître dans la liste des tâches
-
-Objectif : gérer les tests une tâche d'une todo-list
-
-Exécution des tests : 
-
-image::capture.PNG[Exécution des tests du TP3]
