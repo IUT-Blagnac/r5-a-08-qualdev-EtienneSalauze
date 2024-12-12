@@ -1,0 +1,124 @@
+:toc: right
+:backend: html5
+:doctitle: Living Documentation
+:doctype: book
+:icons: font
+:!numbered:
+:sectanchors:
+:sectlink:
+:docinfo:
+:source-highlighter: highlightjs
+:toclevels: 3
+:hardbreaks:
+:chapter-label: Chapter
+:version-label: Version
+
+= *Living Documentation*
+
+== *Summary*
+[cols="12*^m", options="header,footer"]
+|===
+3+|Scenarios 7+|Steps 2+|Features: 2
+
+|[green]#*Passed*#
+|[red]#*Failed*#
+|Total
+|[green]#*Passed*#
+|[red]#*Failed*#
+|[purple]#*Skipped*#
+|[maroon]#*Pending*#
+|[yellow]#*Undefined*#
+|[blue]#*Missing*#
+|Total
+|Duration
+|Status
+
+12+^|*<<An-example>>*
+|1
+|0
+|1
+|3
+|0
+|0
+|0
+|0
+|0
+|3
+|004ms
+|[green]#*passed*#
+
+12+^|*<<Gestion-des-tâches-dans-l'application-To-Do>>*
+|3
+|0
+|3
+|9
+|0
+|0
+|0
+|0
+|0
+|9
+|006ms
+|[green]#*passed*#
+12+^|*Totals*
+|4|0|4|12|0|0|0|0|0|12 2+|010ms
+|===
+
+== *Features*
+
+[[An-example, An example]]
+=== *An example*
+
+ifndef::backend-pdf[]
+minmax::An-example[]
+endif::[]
+==== Scenario: The example
+
+==========
+Given ::
+an example scenario icon:thumbs-up[role="green",title="Passed"] [small right]#(004ms)#
+When ::
+all step definitions are implemented icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Then ::
+the scenario passes icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+==========
+
+[[Gestion-des-tâches-dans-l'application-To-Do, Gestion des tâches dans l'application To-Do]]
+=== *Gestion des tâches dans l'application To-Do*
+
+ifndef::backend-pdf[]
+minmax::Gestion-des-tâches-dans-l'application-To-Do[]
+endif::[]
+==== Scenario: Ajouter une tâche avec succès
+
+==========
+Given ::
+L'utilisateur est connecté à l'application de gestion des tâches icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+When ::
+L'utilisateur ajoute une tâche intitulée "Faire les courses" icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Then ::
+La tâche "Faire les courses" doit apparaître dans la liste des tâches icon:thumbs-up[role="green",title="Passed"] [small right]#(002ms)#
+==========
+
+==== Scenario: Marquer une tâche comme terminée
+
+==========
+Given ::
+L'utilisateur a une tâche intitulée "Faire les courses" dans la liste icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+When ::
+L'utilisateur marque la tâche "Faire les courses" comme terminée icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Then ::
+La tâche "Faire les courses" doit être marquée comme terminée icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+==========
+
+==== Scenario: Supprimer une tâche
+
+==========
+Given ::
+L'utilisateur a une tâche intitulée "Faire les courses" dans la liste icon:thumbs-up[role="green",title="Passed"] [small right]#(001ms)#
+When ::
+L'utilisateur supprime la tâche "Faire les courses" icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+Then ::
+La tâche "Faire les courses" ne doit plus apparaître dans la liste des tâches icon:thumbs-up[role="green",title="Passed"] [small right]#(000ms)#
+==========
+
