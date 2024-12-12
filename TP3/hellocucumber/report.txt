@@ -1,0 +1,16 @@
+  Given L'utilisateur a une tâche intitulée "Faire les courses" dans la liste        # GestionTachesTest.utilisateur_a_tache(java.lang.String)
+Tâche supprimée : Faire les courses
+  When L'utilisateur supprime la tâche "Faire les courses"                           # GestionTachesTest.utilisateur_supprime_tache(java.lang.String)
+  Then La tâche "Faire les courses" ne doit plus apparaître dans la liste des tâches # GestionTachesTest.tache_supprimee(java.lang.String)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s -- in hellocucumber.RunCucumberTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.649 s
+[INFO] Finished at: 2024-12-12T08:19:26+01:00
+[INFO] ------------------------------------------------------------------------
